@@ -1,0 +1,12 @@
+load("//nickel:nickel.bzl", "nickel_export", "nickel_library")
+
+nickel_library(
+    name = "world",
+    srcs = ["world.ncl"],
+)
+
+nickel_export(
+    name = "hello",
+    src = "hello.ncl",
+    deps = [":world"],
+)

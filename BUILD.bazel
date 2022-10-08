@@ -1,0 +1,7 @@
+exports_files(
+    [
+        "cargo-bazel-lock.bzl",
+        "Cargo.Bazel.lock",
+    ],
+    visibility = ["//visibility:public"],
+)
